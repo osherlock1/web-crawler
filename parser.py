@@ -10,4 +10,4 @@ def extract_links(html: str, base_url: str) -> list[str]:
         href = link.get('href')
         if href:
             extracted_links.append(href)
-            
+    return extracted_links
