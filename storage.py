@@ -38,7 +38,7 @@ def insert_page(connection, url: str, status_code: int, title: str, depth: int) 
 
     if result is None:
         raise ValueError(f"Page ID not found for URL: {url}")
-    return result[0]
+    return result
 
 
 def get_page_id(connection, url):
